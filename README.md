@@ -50,7 +50,7 @@ $ pod install
 - [Kingfisher](https://github.com/onevcat/Kingfisher)
 - [SnapKit](http://snapkit.io/)
 - [R.swift](https://github.com/mac-cain13/R.swift)
-- [Quick]()
-- [Nimble]()
+- [Quick](https://github.com/Quick/Quick)
+- [Nimble](https://github.com/Quick/Nimble)
 
 

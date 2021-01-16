@@ -24,7 +24,7 @@ If you have CocoaPods already don't forget to update local repo by running this 
 $ pod repo update
 ```
 
-To clone *HumanSoftSolution* the first time, simply run the command:
+To clone *Repositories* the first time, simply run the command:
 
 ```bash
 $ git clone https://github.com/iAmrSalman/Repositories.git

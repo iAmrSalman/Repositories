@@ -76,6 +76,8 @@
 		44CF3A0E25AE65E400DFF30F /* CoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44CF39F925AE65E400DFF30F /* CoreKit.framework */; };
 		44CF3A0F25AE65E400DFF30F /* CoreKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 44CF39F925AE65E400DFF30F /* CoreKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		89401904EA9907F0C5F2238A /* Pods_CoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F36320FD1709575203D45F2 /* Pods_CoreKit.framework */; };
+		926E98C627F5DABB00839010 /* CoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44CF39F925AE65E400DFF30F /* CoreKit.framework */; };
+		926E98C727F5DABB00839010 /* CoreKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 44CF39F925AE65E400DFF30F /* CoreKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B842BDF1EC48130D8C239C63 /* Pods_Repositories.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 809BCD2D827CC4542F5BB1CC /* Pods_Repositories.framework */; };
 		BDAC6A6E65785F9447CEE8AC /* Pods_CoreKit_CoreKitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF6E418EA76C189FFF075DB1 /* Pods_CoreKit_CoreKitTests.framework */; };
 		C37C1D75C92EAEB7A66FD4AC /* Pods_AppUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF47CBD66DE1A1AC24AD9486 /* Pods_AppUIKit.framework */; };
@@ -138,6 +140,13 @@
 			remoteGlobalIDString = 44CF39F825AE65E400DFF30F;
 			remoteInfo = CoreKit;
 		};
+		926E98C827F5DABB00839010 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 44CF39AD25AE648B00DFF30F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 44CF39F825AE65E400DFF30F;
+			remoteInfo = CoreKit;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -162,6 +171,17 @@
 				44CF39DB25AE65AA00DFF30F /* App_iOS.framework in Embed Frameworks */,
 				44CF39EE25AE65CC00DFF30F /* AppUIKit.framework in Embed Frameworks */,
 				44CF3A0F25AE65E400DFF30F /* CoreKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		926E98CA27F5DABB00839010 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				926E98C727F5DABB00839010 /* CoreKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,6 +307,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				926E98C627F5DABB00839010 /* CoreKit.framework in Frameworks */,
 				C37C1D75C92EAEB7A66FD4AC /* Pods_AppUIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -807,10 +828,12 @@
 				44CF39E225AE65CB00DFF30F /* Sources */,
 				44CF39E325AE65CB00DFF30F /* Frameworks */,
 				44CF39E425AE65CB00DFF30F /* Resources */,
+				926E98CA27F5DABB00839010 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				926E98C927F5DABB00839010 /* PBXTargetDependency */,
 			);
 			name = AppUIKit;
 			productName = AppUIKit;
@@ -1262,6 +1285,11 @@
 			isa = PBXTargetDependency;
 			target = 44CF39F825AE65E400DFF30F /* CoreKit */;
 			targetProxy = 44CF3A0C25AE65E400DFF30F /* PBXContainerItemProxy */;
+		};
+		926E98C927F5DABB00839010 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 44CF39F825AE65E400DFF30F /* CoreKit */;
+			targetProxy = 926E98C827F5DABB00839010 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
